@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  /* background:blue; */
+}
+
+main>section {
+  height: calc(100vh - 50px);
+  display: none;
+  background-color: #fff;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+main>section:first-child {
+  display: block;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+
+footer>div {
+  flex: 1;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer>div>span {
+  display: block;
+  padding-top: 5px;
+}
+
+footer .active {
+  color: #ff5722;
+}
+
+footer>div:nth-child(1) span:nth-child(2) {
+  padding-top: 4.5px;
+}
+
+footer>div:nth-child(2) span:nth-child(1) {
+  font-size: 20px;
+  padding-top: 2.5px;
+}
+
+footer>div:nth-child(2) span:nth-child(2) {
+  padding-top: 3px
+}
+
+footer>div:nth-child(3) span:nth-child(1) {
+  font-size: 20px;
+  padding-top: 3px;
+}
+
+footer>div:nth-child(3) span:nth-child(2) {
+  padding-top: 3px;
+}
+
+#search {
+  height: calc(100% - 45px);
+}
+
+section .search-area {
+  color: #333;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+section .search-area input {
+  width: calc(100% - 100px);
+  margin: 10px 25px;
+  padding: 8px;
+  background-color: #eee;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  outline: none;
+}
+
+section .search-area .button {
+  right: 5%;
+  margin: 10px -12px;
+  padding: 8px 10px;
+  background: #FF5722;
+  color: #fff;
+  line-height: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.item>a {
+  display: flex;
+}
+
+.item .hover,
+.item .hover img {
+  width: 70px;
+}
+
+.item .detail {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.item .detail h2 {
+  font-size: 16px;
+}
+
+.item .detail .extra {
+  color: #555;
+  margin-top: 6px;
+}
+
+.item .detail .score {
+  color: #ff5722;
+}
+
+.loading {
+  text-align: center;
+  display: none;
+  padding: 5px 0;
+}
+
+.loading .iconfont {
+  display: inline-block;
+  /*        background:red; */
+  animation: 1s rotate linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
