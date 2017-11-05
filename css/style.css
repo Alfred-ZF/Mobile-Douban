@@ -26,6 +26,10 @@ main {
   /* background:blue; */
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 main>section {
   height: calc(100vh - 50px);
   display: none;
